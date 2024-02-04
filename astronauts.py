@@ -12,4 +12,13 @@ def beolvaso():
             szuletesi_datumok.append(szuletesi_datum)
         return szuletesi_datumok
 
-pprint(beolvaso())
+def megkapja_honapok(lista):
+    honapok = []
+    for elem in lista:
+        elem = elem.split('/')
+        honapok.append(elem[0])
+    pprint(honapok)
+
+
+
+megkapja_honapok(beolvaso())
